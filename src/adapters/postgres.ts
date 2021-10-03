@@ -41,9 +41,9 @@ export class PostgresAdapter extends Adapter {
 
   public async query(query: string, values?: any[]): Promise<DatabaseResult[]> {
     let result = Array.isArray(values) && values.length >= 1
-      ? await this.client.query({ text: query, args: values })
-      : await this.client.query(query);
+      ? await this.client.queryObject({ text: query, args: values })
+      : await this.client.queryObject(query);
 
-    return result.rowsOfObjects();
+    return result.rows as unknown as DatabaseResult[];
   }
 }
