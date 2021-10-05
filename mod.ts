@@ -8,12 +8,13 @@ export { Schema } from "./src/migrations/schema.ts";
 export { ColumnBuilder } from "./src/migrations/columnbuilder.ts";
 export { ForeignActions } from "./src/migrations/foreign.ts";
 export { MigrationRunner } from "./src/migrations/migrationrunner.ts";
+export { TableBuilder } from "./src/migrations/tablebuilder.ts";
 export {
-  BelongsTo,
-  Column,
-  DataType,
-  HasMany,
-  Model,
-  Primary,
+    BelongsTo,
+    Column,
+    DataType,
+    HasMany,
+    Model,
+    Primary,
 } from "./src/model.ts";
 export { Q } from "./src/q.ts";
