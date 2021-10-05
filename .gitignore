@@ -1,9 +1,10 @@
 .DS_Store
 .env
-experiments
-db.sqlite3
-test.zsh
-docs/.vuepress/dist
-ormconfig.json
 .idea
 .vscode
+db.sqlite3
+docs/.vuepress/dist
+experiments
+migrations/*
+ormconfig.json
+test.zsh
