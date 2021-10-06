@@ -5,6 +5,7 @@ export { Manager } from "./src/manager.ts";
 export type { FindOneOptions, FindOptions } from "./src/manager.ts";
 export { BaseModel } from "./src/basemodel.ts";
 export { Adapter } from "./src/adapters/adapter.ts";
+export type { DatabaseResult } from "./src/adapters/adapter.ts";
 export { Schema } from "./src/migrations/schema.ts";
 export { ColumnBuilder } from "./src/migrations/columnbuilder.ts";
 export { ForeignActions } from "./src/migrations/foreign.ts";
